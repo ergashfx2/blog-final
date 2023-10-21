@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+		{% if searched %}
+<div style="text-align: center;">
+		<h1 style="color: red">Qidiruv natijalari </h1>
+		<br/>
+	 {% for article in articles %}
+<div class="card" style="width: 30rem;">
+            <div class="card-header">
+                <span class="font-weight-bold"><a href="{% url 'article_detail' article.pk  %}"><h2 style="text-align: left">{{ article.title }}</h2></a></span>
+            </div>
+            {% if article.photo %}
+                <img class="w-50 h-50" src="{{ article.photo.url }}" alt="{{ article.title }}">
+            {%  endif %}
+            <div class="card-body" style="text-align: left">
+                {{ article.summary }}...<a href="{% url 'article_detail' article.pk  %}">batafsil</a>
+            </div>
+            <div class="card-footer text-left text-muted">
+                <span class="text-muted">muallif {{ article.author | title }} &middot; {{ article.date }}</span>
+            </div>
+{#        </div>#}
+	{% endfor %}
+</div>
+	{% else %}
+	<h1> Hech narsa topilmadi</h1>
+{% endif %}
+
+{% endblock %}

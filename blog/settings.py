@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%4*%f1y1ldgh74*i5+l3*6^$2s!+pvs5o)pctroh4!-2j+(b3='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -38,9 +38,13 @@ INSTALLED_APPS = [
     # tashqi app
     "crispy_forms",
     "crispy_bootstrap4",
+    'ckeditor',
+    'ckeditor_uploader',
+    'django_makeallmessages',
     # men o'zim yaratgan applar
     'accounts',
     'pages',
+    'articles'
 ]
 
 MIDDLEWARE = [
@@ -54,6 +58,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'blog.urls'
+
 
 TEMPLATES = [
     {
@@ -71,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'config.wsgi.application'
+WSGI_APPLICATION = 'blog.wsgi.application'
 
 
 # Database
@@ -152,13 +157,13 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
 # CKEDITOR CONFIGS
-# CKEDITOR_CONFIGS = {
-#     'default': {
-#         'toolbar': 'Full',
-#     },
-# }
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Full',
+    },
+}
 
-# CKEDITOR_UPLOAD_PATH = "uploads/"
-# CKEDITOR_RESTRICT_BY_USER = True
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_RESTRICT_BY_USER = True
 
 # STATIC

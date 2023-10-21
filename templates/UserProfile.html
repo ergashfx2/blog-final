@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Profile page{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <!-- Header -->
+    <header>
+        <h1>Foydalanuvchi shaxsiy ma'lumotlari</h1>
+         <div class="dropdown-divider"></div>
+         <div class="dropdown-divider"></div>
+    </header>
+
+    <!-- Profile Content -->
+  <div class="row">
+        <div class="col-md-4">
+            <!-- User Avatar -->
+            <img src="{{ user.profile.avatar.url | default:'/media/images/user.jpg' }}" alt="User Avatar">
+        </div>
+        <div class="col-md-8">
+            <ul>
+                <li>
+                    <p>Foydalanuvchi nomi : {{user_info.username}}</p>
+                </li>
+                <li>
+                    <p>Ismi : {{user_info.first_name}}</p>
+                </li>
+                <li>
+                    <p>Familiyasi {{user_info.last_name}}</p>
+                </li>
+                <li>
+                    <p>Email manzili : {{user_info.email}}</p>
+                </li>
+                <li>
+                    <p>Yoshi {{user_info.age}}</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}
+

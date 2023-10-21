@@ -3,9 +3,12 @@
 {% block title %}Ro'yxatdan o'tish{% endblock title %}
 
 {% block content %}
-    <h2>Ro'yxatdan o'tish</h2>
-    <form method="post">{% csrf_token %}
+    <h2>Saytga kirish</h2>
+    <form method="post">
+        {% csrf_token %}
         {{ form|crispy }}
-        <button type="button" class="btn btn-success">Yuborish</button>
+        <a style="display: block" href="{% url 'password_reset'  %}">Parolni unutdingizmi ?</a>
+         <div class="dropdown-divider"></div>
+        <button type="submit" class="btn btn-success">Yuborish</button>
     </form>
 {% endblock content %}
