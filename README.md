@@ -24,4 +24,4 @@ Open cmd and write this code
 ```
 ## Screenshots
 
-![Screen SHots]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://telegra.ph/file/388e4c6b488a574874e34.png)https://telegra.ph/file/388e4c6b488a574874e34.png)
+![Screen SHots]([https://telegra.ph/file/388e4c6b488a574874e34.png])
