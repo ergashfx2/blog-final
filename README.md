@@ -14,7 +14,7 @@ Open cmd and write this code
 
 ```bash
   cd your-project
-  git clone https://github.com/ergashfx2/shop.git
+  git clone https://github.com/ergashfx2/blog-final.git
   cd shop
 ```
 
