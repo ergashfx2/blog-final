@@ -22,6 +22,8 @@ Open cmd and write this code
   pip install -r requirements.txt
   python manage.py runserver
 ```
+
 ## Screenshots
 
-![Screen SHots]([https://telegra.ph/file/388e4c6b488a574874e34.png])
+![App Screenshot](https://telegra.ph/file/388e4c6b488a574874e34.png)
+
