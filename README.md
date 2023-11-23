@@ -1,19 +1,25 @@
-# Awesome Project
 
-Welcome to the Awesome Project! This project does amazing things and solves fascinating problems.
+## Badges
 
-## Table of Contents
+[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![Django Version](https://img.shields.io/badge/Django-4.2.6-green.svg)](https://docs.djangoproject.com/en/stable/releases/)
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
+# Blog website
+
+A sample website template for blogs. In this website people can find interesting and usefull posts. In this blog website anyone can registr and publish it. So people can read. 
 ## Installation
 
-To get started with the Awesome Project, follow these steps:
+Open cmd and write this code
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/awesome-project.git
-   cd awesome-project
+```bash
+  cd your-project
+  git clone https://github.com/ergashfx2/shop.git
+  cd shop
+```
+
+```bash
+  pip install -r requirements.txt
+  python manage.py runserver
+```
+    
